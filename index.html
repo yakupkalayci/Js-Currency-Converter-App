@@ -8,7 +8,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 id="title">Exchange Converter</h1>
+        <div class="card" id="cardFirst">
+            <div id="infos">
+                <span>Amount</span>
+                <span>From</span>
+                <span>To</span>
+            </div>
+            <div id="inputs">
+                <input type="number" name="amount" id="amount">
+                <select name="firstCurrency" id="firstCurrency">
+                    <option selected>USD</option>
+                    <option>EUR</option>
+                    <option>JPY</option>
+                    <option>BGN</option>
+                    <option>CZK</option>
+                    <option>DKK</option>
+                    <option>GBP</option>          
+                    <option>HUF</option>
+                    <option>PLN</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>CHF</option>
+                    <option>ISK</option>
+                    <option>NOK</option>          
+                    <option>HRK</option>
+                    <option>RUB</option>
+                    <option>TRY</option>
+                    <option>AUD</option>
+                    <option>BRL</option>          
+                    <option>CAD</option>
+                    <option>CNY</option>
+                    <option>HKD</option>
+                    <option>IDR</option>          
+                    <option>ILS</option>
+                    <option>INR</option>
+                    <option>KRW</option>
+                    <option>MXN</option>          
+                    <option>MYR</option>
+                    <option>NZD</option>
+                    <option>PHP</option>
+                    <option>SGD</option>
+                    <option>THB</option>          
+                    <option>ZAR</option>
+                </select>
+                <select id = "secondCurrency">
+                                                  
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>JPY</option>
+                    <option>BGN</option>
+                    <option>CZK</option>
+                    <option>DKK</option>
+                    <option>GBP</option>          
+                    <option>HUF</option>
+                    <option>PLN</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>CHF</option>
+                    <option>ISK</option>
+                    <option>NOK</option>          
+                    <option>HRK</option>
+                    <option>RUB</option>
+                    <option selected>TRY</option>
+                    <option>AUD</option>
+                    <option>BRL</option>          
+                    <option>CAD</option>
+                    <option>CNY</option>
+                    <option>HKD</option>
+                    <option>IDR</option>          
+                    <option>ILS</option>
+                    <option>INR</option>
+                    <option>KRW</option>
+                    <option>MXN</option>          
+                    <option>MYR</option>
+                    <option>NZD</option>
+                    <option>PHP</option>
+                    <option>SGD</option>
+                    <option>THB</option>          
+                    <option>ZAR</option>
+                </select>
+            </div>
+        </div>
+        <div class="card" id="cardSecond">
+            <div id="currencyInfos">
+                <span>USD</span>
+                <span>-</span>
+                <span>TRY</span>
+            </div>
+            <div id="currencyResult">
+                <input type="number" name="currencyResult" id="currencyResult" readonly>
+            </div>
+        </div>
+    </div>
+
+
     <script src="ui.js"></script>
     <script src="currrency.js"></script>
     <script src="app.js"></script>
