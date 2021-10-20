@@ -11,18 +11,22 @@ let currencyFrom = currencyInfo.firstElementChild;
 let currencyTo = currencyInfo.lastElementChild;
 
 const uiObject = new UI();
+const currencyObject = new Currency();
 
 addEventListeners();
 
 function addEventListeners() {
-    amount.addEventListener("change", convert);
+    amount.addEventListener("input", convert);
     currencyFromSelect.addEventListener("change", changeFrom);
     currencyToSelect.addEventListener("change", changeTo);
 }
 
 
 function convert() {
-
+    currencyObject.changeValues(currencyFromSelect.value, currencyToSelect.value, amount.value);
+    currencyObject.convert()
+    .then(response => uiObject.showResult(response.result))
+    .catch(err => uiObject.showResult("An error occured.."));
 }
 
 function changeFrom() {
